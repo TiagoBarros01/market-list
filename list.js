@@ -5,13 +5,25 @@ let buttonElement = document.querySelector("#app button");
 let lists = ["Pão de hamburger", "Mel", "Cobertura de chocolate"];
 
 function renderLists() {
-    for (list of lists) {
-        const listElement = document.createElement("li");
-        const listText = document.createTextNode(list)
+  listsElement.innerHTML = "";
 
-        listElement.appendChild(listText)
-        listsElement.appendChild(listElement)
-    }
+  for (list of lists) {
+    let listElement = document.createElement("li");
+    let listText = document.createTextNode(list);
+
+    listElement.appendChild(listText);
+    listsElement.appendChild(listElement);
+  }
 }
 
-renderLists()
+renderLists();
+
+function addItem() {
+  let listText = inputElement.value;
+
+  lists.push(listText);
+  inputElement.value = "";
+  renderLists();
+}
+
+buttonElement.onclick = addItem;
