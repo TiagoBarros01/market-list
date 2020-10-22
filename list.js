@@ -28,6 +28,7 @@ function renderLists() {
     listElement.appendChild(linkElement);
 
     listsElement.appendChild(listElement);
+
   }
 }
 
@@ -36,7 +37,14 @@ renderLists();
 function addItem() {
   let listText = inputElement.value;
 
-  lists.push(listText);
+  if (listText === '') {
+    console.warn("Escreva algo para adicionar a lista!")
+    alert("Escreva algo para adicionar a lista!")
+  }
+  else {
+    lists.push(listText);
+  }
+
   inputElement.value = "";
   renderLists();
   saveToStorage();
