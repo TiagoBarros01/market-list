@@ -17,7 +17,6 @@ body {
   padding-top: 1rem;
 
   border-radius: 1rem;
-
 }
 
 li {
@@ -69,7 +68,6 @@ button {
   cursor: pointer;
 
   animation: show 2100ms;
-
 }
 
 button:hover {
@@ -88,56 +86,4 @@ button:hover {
 
 .content-offer a {
   margin: 0;
-}
-
-@media (max-width: 1250px) {
-  li {
-    font-size: 1.1rem;
-  }
-
-  input {
-    width: calc(100% - 35%);
-    padding: 0.6rem;
-    border-radius: 0.8rem;
-
-    font-size: calc(100% - 15%);
-    font-weight: 600;
-  }
-
-  button {
-    padding: 0.6rem;
-
-    border-radius: 0.8rem;
-
-    font-size: 0.9rem;
-  }
-  .content-offer {
-    width: 30%;
-    margin: 0 auto;
-    word-break: break-word;
-  }
-}
-
-@media (max-width: 1080px) {
-  button {
-    padding-top: .7rem;
-    padding-bottom: .7rem;
-    width: calc(100% - 45%);
-    margin-bottom: 1rem;
-  }
-
-  input {
-    padding: 0.8rem;
-    font-size: calc(100% - 25%);
-  }
-}
-
-@keyframes show {
-    0% {
-        transform: translateY(100vh)
-    }
-
-    100% {
-        transform: translateY(0%)
-    }
 }
