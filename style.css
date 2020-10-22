@@ -1,0 +1,80 @@
+body {
+    background: var(--color-background)
+}
+
+#app {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#content {
+    width: 30%;
+    margin: 0 auto;
+    background-color: var(--color-background-secondary);
+    padding-top: 1rem;
+
+    border-radius: 1rem;
+}
+
+li {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+
+a {
+    color: var(--color-red);
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--color-red-secondary);
+    transition: 200ms;
+}
+
+input {
+    color: var(--color-black);
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: .8rem;
+    border-radius: 1rem;
+
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button {
+    background: var(--color-green);
+    color: var(--color-white);
+    padding: .8rem;
+
+    border-radius: 1rem;
+
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--color-green-secondary);
+    transition: 200ms;
+}
+
+.content-offer {
+    margin-top: 1rem;
+    color: var(--color-primary);
+    text-align: center;
+    font-weight: 600;
+}
+
+.content-offer a {
+    margin: 0;
+}
+

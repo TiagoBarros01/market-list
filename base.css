@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-background: #1d192c;
+    --color-background-secondary: #2b2347;
+    --color-green: #04d361;
+    --color-green-secondary: #09bd5a;
+    --color-red: #e83f5b;
+    --color-red-secondary: #d4304c;
+    --color-primary: #e1e1e6;
+    --color-black: #0d0d0f;
+    --color-white: #efeff5;
+}
