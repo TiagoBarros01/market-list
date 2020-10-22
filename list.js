@@ -11,7 +11,22 @@ function renderLists() {
     let listElement = document.createElement("li");
     let listText = document.createTextNode(list);
 
+    let linkElement = document.createElement("a");
+
+    linkElement.setAttribute("href", "#");
+
+    let pos = lists.indexOf(list);
+
+    linkElement.setAttribute('onclick', 'deleteItem('+ pos +')')
+
+    let linkText = document.createTextNode("Delete");
+
+    linkElement.appendChild(linkText);
+
     listElement.appendChild(listText);
+
+    listElement.appendChild(linkElement);
+
     listsElement.appendChild(listElement);
   }
 }
@@ -27,3 +42,8 @@ function addItem() {
 }
 
 buttonElement.onclick = addItem;
+
+function deleteItem(pos) {
+  lists.splice(pos, 1);
+  renderLists();
+}
