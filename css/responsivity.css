@@ -21,6 +21,7 @@
   }
   .content-offer {
     width: 30%;
+    padding-top: 1rem;
     margin: 0 auto;
     word-break: break-word;
   }
@@ -30,12 +31,60 @@
   button {
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
-    width: calc(100% - 45%);
+    width: calc(100% - 50%);
     margin-bottom: 1rem;
   }
 
   input {
-    padding: 0.8rem;
-    font-size: calc(100% - 25%);
+    padding: .7rem;
+    width: calc(100% - 25%);
+    margin-bottom: 1.5rem;
+  }
+  .content-offer {
+    word-break: normal;
+    width: 30%;
+  }
+}
+
+@media (max-width: 950px) {
+  #content {
+    margin-top: 5rem
+  }
+  li {
+    font-size: 1rem;
+    
+  }
+  .content-offer {
+    width: 35%;
+  }
+}
+
+@media (max-width: 675px) {
+  .content-offer {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-offer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 540px) {
+  .content-offer {
+    width: 60%;
+  }
+}
+
+@media (max-width: 400px) {
+  .content-offer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 300px) {
+  .content-offer {
+    width: 85%;
   }
 }
