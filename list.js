@@ -1,12 +1,18 @@
+let title = document.querySelector(".title-header");
 let listsElement = document.querySelector("#app ul");
 let inputElement = document.querySelector("#app input");
 let buttonElement = document.querySelector("#app button");
 
 let lists = JSON.parse(localStorage.getItem("listItems")) || [];
 
+if (lists.length > 0) {
+  title.style.display = "none";
+} 
+
 function renderLists() {
   listsElement.innerHTML = "";
 
+  // List items
   for (list of lists) {
     let listElement = document.createElement("li");
     let listText = document.createTextNode(list);
@@ -28,7 +34,6 @@ function renderLists() {
     listElement.appendChild(linkElement);
 
     listsElement.appendChild(listElement);
-
   }
 }
 
@@ -37,13 +42,20 @@ renderLists();
 function addItem() {
   let listText = inputElement.value;
 
-  if (listText === '') {
-    console.warn("Escreva algo para adicionar a lista!")
-    alert("Escreva algo para adicionar a lista!")
-  }
+  if (lists.length >= 12) {
+    alert(
+      "Você atingiu o número máximo de itens na lista!\nDelete alguns itens para adicionar outros"
+    );
+  } 
+  else if (listText === "") {
+    console.warn("Escreva algo para adicionar a lista!");
+    alert("Escreva algo para adicionar a lista!");
+  } 
   else {
     lists.push(listText);
   }
+
+  title.style.display = "none";
 
   inputElement.value = "";
   renderLists();

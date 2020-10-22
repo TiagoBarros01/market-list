@@ -1,6 +1,16 @@
 @keyframes show {
     0% {
-        transform: translateY(100vh)
+        transform: translateY(110vh)
+    }
+
+    100% {
+        transform: translateY(0%)
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100vh)
     }
 
     100% {

@@ -3,6 +3,25 @@ body {
   overflow: hidden;
 }
 
+h1.title-header {
+  color: white;
+  text-align: center;
+
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: .5rem;
+
+  line-height: 2rem;
+
+  animation: slide 1.7s
+
+}
+
+span {
+  color: var(--color-green);
+  margin-left: .2rem;
+}
+
 #app {
   text-align: center;
   margin-top: 2rem;
@@ -23,7 +42,6 @@ li {
   color: var(--color-primary);
   font-size: 1.3rem;
   line-height: 1.7rem;
-  animation: show 1700ms;
 }
 
 a {
@@ -50,7 +68,6 @@ input {
   font-size: 1rem;
   font-weight: 600;
 
-  animation: show 2100ms;
 }
 
 button {
@@ -67,7 +84,6 @@ button {
 
   cursor: pointer;
 
-  animation: show 2100ms;
 }
 
 button:hover {
@@ -81,7 +97,7 @@ button:hover {
   text-align: center;
   font-weight: 600;
 
-  animation: show 2.4s;
+  animation: show 2s;
 }
 
 .content-offer a {
