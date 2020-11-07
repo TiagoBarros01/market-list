@@ -8,11 +8,13 @@
     box-sizing: border-box;
 
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 :root {
     --color-background: #1d192c;
     --color-background-secondary: #2b2347;
+    --color-background-warning: #3a2e66;
     --color-green: #04d361;
     --color-green-secondary: #09bd5a;
     --color-red: #e83f5b;

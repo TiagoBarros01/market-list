@@ -26,6 +26,7 @@ span {
   text-align: center;
   margin-top: 2rem;
   animation: show 1.7s;
+  padding-bottom: .5rem;
 }
 
 #content {
@@ -36,6 +37,8 @@ span {
   padding-top: 1rem;
 
   border-radius: 1rem;
+
+  padding-bottom: .5rem;
 }
 
 li {
@@ -102,4 +105,23 @@ button:hover {
 
 .content-offer a {
   margin: 0;
+}
+
+.max-items {
+  width: 70%;
+  margin: 0 auto;
+  height: 4rem;
+  background: var(--color-background-warning);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .6rem;
+  color: var(--color-white);
+  font-size: 100%;
+  font-weight: 700;
+}
+
+.max-items img {
+  margin-right: .5rem;
+  animation: shake 90ms infinite ease-in-out alternate;
 }
