@@ -13,6 +13,7 @@
     font-size: 85%;
   }
   button {
+    width: 40%;
     height: 2rem;
     border-radius: .5rem;
     line-height: .6rem;
@@ -37,6 +38,7 @@
     height: 2.8rem;
   }
   button {
+    width: 25%;
     height: 2.8rem;
     margin-bottom: .5rem;
   }
@@ -80,7 +82,7 @@
 
 @media screen and (min-width: 1020px) {
   #content {
-    width: 80%;
+    width: 60%;
   }
   input {
     width: 30%;
@@ -91,6 +93,8 @@
   }
   .max-items {
     width: 30%;
+    height: 5rem;
+    font-size: 80%;
   }
 }
 

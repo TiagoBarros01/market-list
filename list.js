@@ -48,7 +48,7 @@ maxItemsImg.setAttribute("src", "img/warning.svg");
 maxItemsImg.setAttribute("class", "warning");
 
 let maxItems = document.createElement("div");
-let maxItemsText = document.createTextNode("Número máximo atingido!");
+let maxItemsText = document.createTextNode("Maximum number reached!");
 maxItems.setAttribute("class", "max-items");
 
 function addItem() {
@@ -68,8 +68,8 @@ function addItem() {
 
     console.log(total);
   } else if (listText === "") {
-    console.warn("Escreva algo para adicionar a lista!");
-    alert("Escreva algo para adicionar a lista!");
+    console.warn("Write something to add to the list!");
+    alert("Write something to add to the list!");
   } else if (lists.length < 12) {
     lists.push(listText);
   }
