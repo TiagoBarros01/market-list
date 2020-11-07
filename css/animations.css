@@ -28,3 +28,13 @@
     }
 }
 
+@keyframes hidden{
+    from {
+        overflow: hidden;
+    }
+
+    to {
+        overflow: hidden;
+    }
+}
+

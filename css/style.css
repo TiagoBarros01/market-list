@@ -1,6 +1,6 @@
 body {
   background: var(--color-background);
-  overflow: hidden;
+  animation: hidden 2s ;
 }
 
 h1.title-header {
@@ -9,7 +9,7 @@ h1.title-header {
 
   font-weight: 800;
   letter-spacing: 1px;
-  margin-top: .5rem;
+  margin-top: 1.5rem;
 
   line-height: 2rem;
 
@@ -99,6 +99,7 @@ button:hover {
   color: var(--color-primary);
   text-align: center;
   font-weight: 600;
+  font-size: 90%;
 
   animation: show 2s;
 }
@@ -119,9 +120,11 @@ button:hover {
   color: var(--color-white);
   font-size: 100%;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .max-items img {
   margin-right: .5rem;
   animation: shake 90ms infinite ease-in-out alternate;
 }
+
