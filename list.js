@@ -6,11 +6,9 @@ let buttonElement = document.querySelector("#app button");
 
 let lists = JSON.parse(localStorage.getItem("listItems")) || [];
 
-if (lists.length >= 1) {
-  title.style.display = "none";
-}
+// Theme Dark or Light
 
-console.log(lists.length);
+lists.length >= 1 ? (title.style.display = "none") : console.log(lists.length);
 
 function renderLists() {
   listsElement.innerHTML = "";
@@ -54,25 +52,22 @@ maxItems.setAttribute("class", "max-items");
 function addItem() {
   let listText = inputElement.value;
 
-  if (lists.length >= 0 && listText !== "") {
-    title.style.display = "none";
-  }
+  lists.length >= 0 && listText !== "" ? (title.style.display = "none") : false;
 
-  if (lists.length >= 12 && total < 1) {
-    total++;
-    maxItems.appendChild(maxItemsImg);
-    maxItems.appendChild(maxItemsText);
-    app.appendChild(maxItems);
-    app.style.display = "flex";
-    app.style.transition = "1s";
-
-    console.log(total);
-  } else if (listText === "") {
-    console.warn("Write something to add to the list!");
-    alert("Write something to add to the list!");
-  } else if (lists.length < 12) {
-    lists.push(listText);
-  }
+  lists.length >= 12 && total < 1
+    ? (total++,
+      maxItems.appendChild(maxItemsImg),
+      maxItems.appendChild(maxItemsText),
+      app.appendChild(maxItems),
+      (app.style.display = "flex"),
+      (app.style.transition = "1s"),
+      console.log(total))
+    : listText === ""
+    ? (console.warn("Write something to add to the list!"),
+      alert("Write something to add to the list!"))
+    : lists.length < 12
+    ? lists.push(listText)
+    : false;
 
   inputElement.value = "";
   renderLists();
