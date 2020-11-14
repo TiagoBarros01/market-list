@@ -4,6 +4,8 @@
   }
   ul li {
     font-size: 90%;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   input {
     height: 2rem;
@@ -37,6 +39,10 @@
     margin-bottom: 1rem;
     height: 2.8rem;
   }
+  li {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
   button {
     width: 25%;
     height: 2.8rem;
@@ -61,6 +67,10 @@
   #content ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  li {
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
   input {
     width: 50%;

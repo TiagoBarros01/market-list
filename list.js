@@ -1,12 +1,11 @@
-let title = document.querySelector(".title-header");
-let app = document.querySelector(".position-item");
-let listsElement = document.querySelector("#app ul");
-let inputElement = document.querySelector("#app input");
-let buttonElement = document.querySelector("#app button");
+const title = document.querySelector(".title-header");
+const positionItem = document.querySelector(".position-item");
+const listsElement = document.querySelector("#app ul");
+const app = document.querySelector("#app");
+const inputElement = document.querySelector("#app input");
+const buttonElement = document.querySelector("#app button");
 
 let lists = JSON.parse(localStorage.getItem("listItems")) || [];
-
-// Theme Dark or Light
 
 lists.length >= 1 ? (title.style.display = "none") : console.log(lists.length);
 
@@ -24,9 +23,9 @@ function renderLists() {
 
     let pos = lists.indexOf(list);
 
-    linkElement.setAttribute("onclick", "deleteItem(" + pos + ")");
+    linkElement.setAttribute("onclick", `deleteItem(${pos})`);
 
-    let linkText = document.createTextNode("Delete");
+    let linkText = document.createTextNode("x");
 
     linkElement.appendChild(linkText);
 
@@ -58,9 +57,9 @@ function addItem() {
     ? (total++,
       maxItems.appendChild(maxItemsImg),
       maxItems.appendChild(maxItemsText),
-      app.appendChild(maxItems),
-      (app.style.display = "flex"),
-      (app.style.transition = "1s"),
+      positionItem.appendChild(maxItems),
+      (positionItem.style.display = "flex"),
+      (positionItem.style.transition = "1s"),
       console.log(total))
     : listText === ""
     ? (console.warn("Write something to add to the list!"),
@@ -77,7 +76,7 @@ function addItem() {
 buttonElement.onclick = addItem;
 
 function deleteItem(pos) {
-  app.style.display = "none";
+  positionItem.style.display = "none";
   total = 0;
   console.log(total);
   lists.splice(pos, 1);

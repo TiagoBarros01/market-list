@@ -1,5 +1,5 @@
 body {
-  background: var(--color-background);
+  background: linear-gradient(90deg, var(--color-background),rgb(48, 48, 53), var(--color-background));
   animation: hidden 2s ;
 }
 
@@ -45,16 +45,29 @@ li {
   color: var(--color-primary);
   font-size: 1.3rem;
   line-height: 1.7rem;
+  margin-top: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
-a {
-  color: var(--color-red);
+a.delete-item {
+  color: var(--color-white);
+  width: 3rem;
+  height: 2rem;
+  background:var(--color-red);
   margin-left: 1rem;
+  padding-left: .3rem;
+  padding-right: .35rem;
   font-weight: 600;
+  border-radius: 5px;
+  padding-bottom: .2rem;
 }
 
-a:hover {
-  color: var(--color-red-secondary);
+a.delete-item:hover {
+  background: var(--color-red-secondary);
   transition: 200ms;
 }
 
