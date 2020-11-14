@@ -20,6 +20,7 @@ function renderLists() {
     let linkElement = document.createElement("a");
 
     linkElement.setAttribute("href", "#");
+    linkElement.setAttribute("class", "delete-item");
 
     let pos = lists.indexOf(list);
 
